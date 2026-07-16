@@ -152,12 +152,18 @@ function openLightbox(item) {
 
   const gradientClass = item.dataset.gradient;
   const badgeText = item.dataset.badge;
+  const imagePath = item.dataset.image;
+  const title = item.dataset.title || "Collection Preview";
 
   lightbox.hidden = false;
   body.classList.add("lightbox-open");
-  lightboxVisual.className = `lightbox-visual ${gradientClass}`;
-  lightboxVisual.innerHTML = `<span>${badgeText}</span>`;
-  lightboxTitle.textContent = item.dataset.title || "Collection Preview";
+  lightboxVisual.className = imagePath
+    ? "lightbox-visual"
+    : `lightbox-visual ${gradientClass}`;
+  lightboxVisual.innerHTML = imagePath
+    ? `<img src="${imagePath}" alt="${title}"><span>${badgeText}</span>`
+    : `<span>${badgeText}</span>`;
+  lightboxTitle.textContent = title;
   lightboxDescription.textContent =
     item.dataset.description || "Luxury gallery preview.";
   lightboxBadge.textContent = badgeText || "Gallery Story";
