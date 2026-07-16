@@ -1500,7 +1500,22 @@ h3 {
 
   .collection-visual,
   .gallery-thumb {
-    min-height: 15rem;
+    min-height: 19rem;
+    aspect-ratio: 4 / 5;
+    place-items: end center;
+  }
+
+  .collection-visual img,
+  .gallery-thumb img,
+  .lightbox-visual img {
+    object-fit: contain;
+    object-position: center top;
+  }
+
+  .lightbox-visual {
+    min-height: 22rem;
+    aspect-ratio: 4 / 5;
+    place-items: end center;
   }
 
   .testimonial-card p {
@@ -1603,6 +1618,15 @@ h3 {
   .gallery-meta,
   .lightbox-content {
     padding: 1.2rem;
+  }
+
+  .collection-visual,
+  .gallery-thumb {
+    min-height: 17rem;
+  }
+
+  .lightbox-visual {
+    min-height: 19rem;
   }
 
   .slider-track {
