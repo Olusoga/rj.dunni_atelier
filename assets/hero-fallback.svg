@@ -1,0 +1,50 @@
+<svg width="900" height="1125" viewBox="0 0 900 1125" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="1125" rx="72" fill="url(#bg)"/>
+  <rect x="46" y="46" width="808" height="1033" rx="52" stroke="rgba(255,255,255,0.28)" stroke-width="2"/>
+  <circle cx="687" cy="198" r="138" fill="url(#glowOne)"/>
+  <circle cx="216" cy="874" r="176" fill="url(#glowTwo)"/>
+  <path d="M172 286C305 196 408 178 517 188C625 198 716 264 776 364" stroke="#D8C18A" stroke-width="2.5" stroke-linecap="round" opacity="0.75"/>
+  <path d="M148 374C291 300 427 278 540 296C648 313 733 370 766 450" stroke="#EDE3CC" stroke-width="1.75" stroke-linecap="round" opacity="0.55"/>
+  <path d="M440 282C484 282 520 320 520 366C520 412 484 450 440 450C396 450 360 412 360 366C360 320 396 282 440 282Z" fill="url(#skin)"/>
+  <path d="M364 358C374 299 411 252 456 252C500 252 536 302 543 362C530 335 502 318 470 318C428 318 390 340 364 358Z" fill="#201814"/>
+  <path d="M378 416C398 438 416 447 440 447C465 447 488 436 503 414C496 476 472 522 440 522C408 522 385 474 378 416Z" fill="#D9B59B" opacity="0.72"/>
+  <path d="M284 577C302 514 361 474 440 474C519 474 577 514 596 577L664 918C594 1007 520 1050 440 1050C360 1050 286 1007 216 918L284 577Z" fill="url(#dress)"/>
+  <path d="M314 564C330 514 374 486 440 486C506 486 550 514 566 564L611 812C570 864 514 893 440 893C366 893 310 864 269 812L314 564Z" fill="url(#dressHighlight)" opacity="0.65"/>
+  <path d="M270 710C320 744 371 760 438 760C503 760 558 743 610 707" stroke="#E7D9B3" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+  <path d="M243 854C300 890 363 911 439 911C515 911 580 890 638 853" stroke="#E7D9B3" stroke-width="2" stroke-linecap="round" opacity="0.52"/>
+  <path d="M296 571C333 542 379 526 440 526C501 526 547 542 584 571" stroke="#E7D9B3" stroke-width="2.4" stroke-linecap="round" opacity="0.82"/>
+  <path d="M337 525C323 564 314 605 314 650C314 690 322 728 338 760" stroke="#1C1A19" stroke-width="34" stroke-linecap="round" opacity="0.82"/>
+  <path d="M543 525C557 564 566 605 566 650C566 690 558 728 542 760" stroke="#1C1A19" stroke-width="34" stroke-linecap="round" opacity="0.82"/>
+  <path d="M297 938C349 984 397 1004 440 1004C483 1004 531 984 583 938" stroke="#EED784" stroke-width="3.2" stroke-linecap="round" opacity="0.85"/>
+  <text x="90" y="980" fill="#FBF7F0" fill-opacity="0.92" font-family="Georgia, 'Times New Roman', serif" font-size="54" letter-spacing="10">RJ.DUNNI ATELIER</text>
+  <text x="92" y="1036" fill="#E5D9B8" fill-opacity="0.82" font-family="Arial, Helvetica, sans-serif" font-size="20" letter-spacing="8">DROP YOUR HERO PORTRAIT INTO assets/hero.jpg</text>
+  <defs>
+    <linearGradient id="bg" x1="92" y1="104" x2="770" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FBF6ED"/>
+      <stop offset="0.52" stop-color="#E8DDCA"/>
+      <stop offset="1" stop-color="#1B1918"/>
+    </linearGradient>
+    <radialGradient id="glowOne" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(687 198) rotate(90) scale(138)">
+      <stop stop-color="#E6CD7F" stop-opacity="0.56"/>
+      <stop offset="1" stop-color="#E6CD7F" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowTwo" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(216 874) rotate(90) scale(176)">
+      <stop stop-color="#FFF7DF" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#FFF7DF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="skin" x1="392" y1="286" x2="503" y2="447" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F0C8AD"/>
+      <stop offset="1" stop-color="#C48D72"/>
+    </linearGradient>
+    <linearGradient id="dress" x1="440" y1="474" x2="440" y2="1050" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1A1716"/>
+      <stop offset="0.42" stop-color="#0D0D0D"/>
+      <stop offset="1" stop-color="#3B3126"/>
+    </linearGradient>
+    <linearGradient id="dressHighlight" x1="342" y1="520" x2="579" y2="915" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E6C874" stop-opacity="0.42"/>
+      <stop offset="0.42" stop-color="#F7F0D6" stop-opacity="0.08"/>
+      <stop offset="1" stop-color="#E6C874" stop-opacity="0.32"/>
+    </linearGradient>
+  </defs>
+</svg>
