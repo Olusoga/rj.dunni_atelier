@@ -28,6 +28,7 @@ let activeSlide = 0;
 let sliderIntervalId = null;
 
 const fallbackHeroPath = "assets/hero-fallback.svg";
+const bookingWhatsappNumber = "2347066979517";
 
 function toggleNavigation(forceOpen) {
   if (!navToggle || !navPanel) return;
@@ -274,8 +275,34 @@ function initForm() {
 
   contactForm.addEventListener("submit", (event) => {
     event.preventDefault();
+    const formData = new FormData(contactForm);
+    const name = String(formData.get("name") || "").trim();
+    const phone = String(formData.get("phone") || "").trim();
+    const email = String(formData.get("email") || "").trim();
+    const service = String(formData.get("service") || "").trim();
+    const message = String(formData.get("message") || "").trim();
+    const whatsappMessage = [
+      "Hello RJ.DUNNI ATELIER, I'd like to book a consultation.",
+      "",
+      `Full Name: ${name}`,
+      `Phone Number: ${phone}`,
+      `Email Address: ${email}`,
+      `Service Needed: ${service}`,
+      "Occasion Details:",
+      message,
+    ].join("\n");
+    const whatsappUrl = `https://wa.me/${bookingWhatsappNumber}?text=${encodeURIComponent(
+      whatsappMessage
+    )}`;
+
+    const whatsappWindow = window.open(whatsappUrl, "_blank", "noopener");
+
+    if (!whatsappWindow) {
+      window.location.href = whatsappUrl;
+    }
+
     feedback.textContent =
-      "Thank you. Your consultation request has been noted and the atelier will be in touch shortly.";
+      "Opening WhatsApp with your booking details so you can send them directly to the atelier.";
     contactForm.reset();
   });
 }
